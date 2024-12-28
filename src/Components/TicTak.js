@@ -36,8 +36,8 @@ const handlecheck=(input)=>{
 for(let i=0;i<possibilty.length;i++){
   const [a,b,c]=possibilty[i]
 
-  if(input[a]===input[b]&&input[b]===input[c]){
-    return(input[a])
+  if (input[a] && input[a] === input[b] && input[b] === input[c]) {
+    return input[a];
   }
 }
 return false
